@@ -23,13 +23,13 @@
 
 // // Get from console
 // =================================================
-#define AWS_IOT_MQTT_HOST              "axt811sti1q4w-ats.iot.eu-west-1.amazonaws.com" ///< Customer specific MQTT HOST. The same will be used for Thing Shadow
+#define AWS_IOT_MQTT_HOST              "Yourmqtthost.iot.eu-west-1.amazonaws.com" ///< Customer specific MQTT HOST. The same will be used for Thing Shadow
 #define AWS_IOT_MQTT_PORT              8883 ///< default port for MQTT/S
-#define AWS_IOT_MQTT_CLIENT_ID         "softchef-1" ///< MQTT client ID should be unique for every device
-#define AWS_IOT_MY_THING_NAME 		   "thingName" ///< Thing Name of the Shadow this device is associated with
-#define AWS_IOT_ROOT_CA_FILENAME       "root_ca.cert.pem" ///< Root CA file name
-#define AWS_IOT_CERTIFICATE_FILENAME   "deviceCert.pem" ///< device signed certificate file name
-#define AWS_IOT_PRIVATE_KEY_FILENAME   "deviceKey.key" ///< Device private key filename
+#define AWS_IOT_MQTT_CLIENT_ID         "Mqtt-1" ///< MQTT client ID should be unique for every device
+#define AWS_IOT_MY_THING_NAME 		   "Yourname" ///< Thing Name of the Shadow this device is associated with
+#define AWS_IOT_ROOT_CA_FILENAME       "RootCA.pem" ///< Root CA file name
+#define AWS_IOT_CERTIFICATE_FILENAME   "Yourcert.pem" ///< device signed certificate file name
+#define AWS_IOT_PRIVATE_KEY_FILENAME   "Yourkey.key" ///< Device private key filename
 // =================================================
 
 // MQTT PubSub
