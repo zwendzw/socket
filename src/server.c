@@ -5,11 +5,11 @@
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <sys/un.h>
-#include <sys/epoll.h> // I/O event notification facility *(for linux)
+#include <sys/epoll.h>
 #include <errno.h>
 #include <stddef.h>
 #include <unistd.h>
-#include<signal.h>
+#include <signal.h>
 #include <fcntl.h>
 
 #define MAXSIZE 1024
@@ -45,7 +45,7 @@ static void do_read(int epollfd, int eventfd);
 static void do_write(int epollfd,int eventfd);
 
 // UDS 檔案名稱
-const char* filename = "socket";
+const char* filename = "ipc-across";
 
 static void add_event(int epollfd,int fd,int state)
 {
